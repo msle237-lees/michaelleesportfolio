@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta lang="en">
+        <title>Michael Lees</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div class="header">
+            <a href="./index.html" class="logo">Michael Lees</a>
+            <div class="header-right">
+                <a class="active" href="./index.html">Home</a>
+                <a href="./html/contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h1>Michael Lees</h1>
+                <p>Student at Kennesaw State University</p>
+            <div class="column">
+                <img src="./assets/imgs/portrait.jpg" alt="Portrait" style="width:100%"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <!-- Slideshow container -->
+                <div class="slideshow-container fade">
+
+                    <!-- Full images with numbers and message Info -->
+                    <div class="Containers">
+                    <div class="MessageInfo">1 / 3</div>
+                    <img src="./assets/imgs/DJI_0065.JPG" style="width:100%">
+                    <div class="Info">Image taken in Buffles' Bay, South Africa</div>
+                    </div>
+                
+                    <div class="Containers">
+                    <div class="MessageInfo">2 / 3</div>
+                    <img src="./assets/imgs/DJI_0066.JPG" style="width:100%">
+                    <div class="Info">Image taken in Buffles' Bay, South Africa</div>
+                    </div>
+                
+                    <div class="Containers">
+                    <div class="MessageInfo">3 / 3</div>
+                    <img src="./assets/imgs/DJI_0067.JPG" style="width:100%">
+                    <div class="Info">Image taken in Buffle's Bay, South Africa</div>
+                    </div>
+                
+                    <!-- Back and forward buttons -->
+                    <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The circles/dots -->
+                <div style="text-align:center">
+                    <span class="dots" onclick="currentSlide(1)"></span>
+                    <span class="dots" onclick="currentSlide(2)"></span>
+                    <span class="dots" onclick="currentSlide(3)"></span>
+                </div> 
+            </div>
+            <div class="column">
+                <h1>What I do:</h1>
+                <p>I am a student at Kennesaw State University studying Information Technologies with a focus in Data 
+                    Analytics.<br>I have experience in the following programming languages:<br><br>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>C/C++</li>
+                        <li>C#</li>
+                    </ul><br><br>
+                    I fly drones as a hobby and I provide the following services:<br><br>
+                    <ul>
+                        <li>Real Estate Photography</li>
+                        <li>Drone Photography</li>
+                        <li>Drone Videography</li>
+                        <li>Video/Photo Editing</li>
+                        <li>Website Development</li>
+                    </ul><br><br>
+                    <a href="./html/contact.html">Contact Me</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <h1>383 Evening Mist Dr. Acworth, GA</h1>
+                <p>This is a sample video of my current capabilities with real estate videography.</p>
+            </div>
+            <div class="column">
+                <video width="100%" height="100%" controls>
+                    <source src="./assets/videos/383-Evening-Mist-Drive-Sample.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <script src="./js/index.js"></script>
+    </body>
+</html>

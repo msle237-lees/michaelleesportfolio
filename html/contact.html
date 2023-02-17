@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta lang="en">
+        <title>Michael Lees</title>
+        <script src="../js/main.js"></script>
+        <link rel="stylesheet" href="../css/index.css">
+    </head>
+    <body>
+        <div class="header">
+            <a href="#default" class="logo">Michael Lees</a>
+            <div class="header-right">
+                <a class="active" href="../index.html">Home</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./resume.html">Resume</a>
+                <a href="./gallery.html">Gallery</a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="../php/contact.php" method="post">
+                <input type="text" name="name" placeholder="Full name">
+                <input type="text" name="mail" placeholder="Your e-mail">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="submit" name="submit">Send e-mail</button>
+            </form>
+        </div>
+    </body>
+</html>
