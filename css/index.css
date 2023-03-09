@@ -19,35 +19,6 @@ body {
   animation: fadeIn 1 1s ease-out;
 }
 
-button {
-  position: absolute;
-  border: 2px solid white;
-  background: transparent;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  width: 250px;
-  height: 50px;
-  font-size: 2em;
-  border-radius: 5px;
-  opacity: .5;
-  top: 60vh;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  margin: auto;
-  transition: .3s;
-}
-
-button:hover {
-  border: 2px solid #104F55;
-  background-color: rgba(365,365,365,0.5);
-  cursor: pointer;
-  color: #104F55;
-  opacity: .8;
-  transition: .3s;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
 .light {
   position: absolute;
   width: 0px;
@@ -169,10 +140,6 @@ button:hover {
   left: 85%;
 }
 
-button:focus {
-  outline: none;
-}
-
 @-webkit-keyframes floatUp {
   0% {
     top: 100vh;
@@ -254,243 +221,83 @@ button:focus {
   }
 }
 
-.header-intro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "Roboto", sans-serif;
-  font-weight: 200;
-  color: white;
-  font-size: 2em;
+.nav-bar {
+  width: 100%;
+  height: 150px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-#head1,
-#head2,
-#head3,
-#head4,
-#head5 {
-  opacity: 0;
+.nav-bar .nav-bar-item {
+  width: 150px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
 }
 
-#head1 {
-  -webkit-animation: fadeOut 1 5s ease-in;
-  -moz-animation: fadeOut 1 5s ease-in;
-  -o-animation: fadeOut 1 5s ease-in;
-  animation: fadeOut 1 5s ease-in;
+.nav-bar .nav-bar-item a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-size: 3em;
+  color: black;
 }
 
-#head2 {
-  -webkit-animation: fadeOut 1 5s ease-in;
-  -moz-animation: fadeOut 1 5s ease-in;
-  -o-animation: fadeOut 1 5s ease-in;
-  animation: fadeOut 1 5s ease-in;
-  -webkit-animation-delay: 6s;
-  -moz-animation-delay: 6s;
-  -o-animation-delay: 6s;
-  animation-delay: 6s;
+.nav-bar .nav-bar-item a:hover {
+  cursor: pointer;
+  color: #e9f1f1;
+  opacity: .8;
+  transition: .3s;
 }
 
-#head3 {
-  -webkit-animation: fadeOut 1 5s ease-in;
-  -moz-animation: fadeOut 1 5s ease-in;
-  -o-animation: fadeOut 1 5s ease-in;
-  animation: fadeOut 1 5s ease-in;
-  -webkit-animation-delay: 12s;
-  -moz-animation-delay: 12s;
-  -o-animation-delay: 12s;
-  animation-delay: 12s;
+.nav-bar .nav-bar-item img {
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
 }
 
-#head4 {
-  -webkit-animation: fadeOut 1 5s ease-in;
-  -moz-animation: fadeOut 1 5s ease-in;
-  -o-animation: fadeOut 1 5s ease-in;
-  animation: fadeOut 1 5s ease-in;
-  -webkit-animation-delay: 17s;
-  -moz-animation-delay: 17s;
-  -o-animation-delay: 17s;
-  animation-delay: 17s;
+.about-me {
+  padding-left: 50px;
+  padding-top: 50px;
+  width: 33%;
+  height: 50%;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-#head5 {
-  -webkit-animation: finalFade 1 5s ease-in;
-  -moz-animation: finalFade 1 5s ease-in;
-  -o-animation: finalFade 1 5s ease-in;
-  animation: finalFade 1 5s ease-in;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 22s;
-  -moz-animation-delay: 22s;
-  -o-animation-delay: 22s;
-  animation-delay: 22s;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-moz-keyframes fadeOut {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-o-keyframes fadeOut {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes finalFade {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes finalFade {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes finalFade {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes finalFade {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#footer {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
-  color: white;
-  position: fixed;
-  -webkit-transform: translate(95vw, 90vh);
-  -moz-transform: translate(95vw, 90vh);
-  transform: translate(95vw, 90vh);
-  transform: translate(95vw, 90vh);
+.about-me-bounding-box {
+  --r:10px;     /* radius   */
+  --g:red 0%,blue; /* gradient */
+  
+  --rg:transparent 50%,var(--g);
+  border-radius:calc(2*var(--r));
+  padding:calc(2*var(--r) + 5px);
+  background:
+    /*corners*/
+    radial-gradient(farthest-side at bottom right,var(--rg)) top    left /calc(2*var(--r)) calc(2*var(--r)),
+    radial-gradient(farthest-side at top    right,var(--rg)) bottom left /calc(2*var(--r)) calc(2*var(--r)),
+    radial-gradient(farthest-side at bottom left ,var(--rg)) top    right/calc(2*var(--r)) calc(2*var(--r)),
+    radial-gradient(farthest-side at top    left ,var(--rg)) bottom right/calc(2*var(--r)) calc(2*var(--r)),
+    /* borders*/
+    linear-gradient(to top   ,var(--g)) top   /calc(100% - 4*var(--r)) var(--r),
+    linear-gradient(to bottom,var(--g)) bottom/calc(100% - 4*var(--r)) var(--r),
+    linear-gradient(to right ,var(--g)) right /var(--r) calc(100% - 4*var(--r)),
+    linear-gradient(to left  ,var(--g)) left  /var(--r) calc(100% - 4*var(--r));
+  background-repeat:no-repeat;
+  width: 100%;
+  height: 100%;
 }
