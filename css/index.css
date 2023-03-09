@@ -8,7 +8,7 @@ body {
   height: 100vh;
   width: 100vw;
   font-weight: 100;
-  background: radial-gradient(#3484df, #1f1013);
+  background-image: linear-gradient(to left bottom, #3a393a, #483f4b, #54455f, #5c4d75, #5f568d, #5f5a9e, #5d5fb0, #5864c3, #5864d1, #5963e0, #5c61ed, #605ffb);
   -webkit-overflow-y: hidden;
   -moz-overflow-y: hidden;
   -o-overflow-y: hidden;
