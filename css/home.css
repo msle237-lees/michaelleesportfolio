@@ -8,7 +8,7 @@ body {
   height: 100vh;
   width: 100vw;
   font-weight: 100;
-  background: radial-gradient(#3484df, #1f1013);
+  background-image: linear-gradient(to left bottom, #3a393a, #483f4b, #54455f, #5c4d75, #5f568d, #5f5a9e, #5d5fb0, #5864c3, #5864d1, #5963e0, #5c61ed, #605ffb);
   -webkit-overflow-y: hidden;
   -moz-overflow-y: hidden;
   -o-overflow-y: hidden;
@@ -221,65 +221,44 @@ body {
   }
 }
 
-.header-intro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "Roboto", sans-serif;
-  font-weight: 200;
-  color: white;
-  font-size: 2em;
+.nav-bar {
+  width: 100%;
+  height: 150px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.content {
-  display: block;
-  position: absolute;
-  font-family: "Roboto", sans-serif;
+.nav-bar .nav-bar-item {
+  width: 150px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar .nav-bar-item a {
   width: 100%;
   height: 100%;
-}
-
-.content .upper-nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 10%;
-  background-color: #1e1e1e;
-  color: white;
-  font-size: 1.5em;
-  padding: 0 5%;
-}
-
-.content .upper-nav-bar img {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 20%;
-  height: 100%;
-}
-
-.content .upper-nav-bar a {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 20%;
-  height: 100%;
-  color: white;
   text-decoration: none;
+  font-size: 3em;
+  color: black;
 }
 
-.content .display-block-1 {
-  display: block;
-  position: absolute;
-  width: 33%;
+.nav-bar .nav-bar-item a:hover {
+  cursor: pointer;
+  color: #e9f1f1;
+  opacity: .8;
+  transition: .3s;
+}
+
+.nav-bar .nav-bar-item img {
+  width: 100%;
   height: 100%;
-  background-color: #1e1e1e;
-  color: white;
-  font-size: 1.5em;
-  padding: 0 5%;
+  padding-left: 50px;
 }
