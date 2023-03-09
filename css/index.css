@@ -248,6 +248,11 @@ body {
   text-decoration: none;
   font-size: 3em;
   color: black;
+  position: absolute;
+  text-align: center;
+  display: -ms-flexbox;
+  -ms-transform: translate(-45%, 5%);
+  transform: translate(-45%, 5%);
 }
 
 .nav-bar .nav-bar-item a:hover {
