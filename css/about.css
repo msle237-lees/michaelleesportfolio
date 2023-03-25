@@ -99,6 +99,26 @@ body {
   padding: 1em;
 }
 
+.flex-box-item h1 {
+  font-size: 2em;
+  font-weight: 600;
+  color: #cccccc;
+  margin-bottom: 0.5em;
+}
+
+.flex-box-item h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #cccccc;
+  margin-bottom: 0.5em;
+}
+
+.flex-box-item ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .flex-box-carousel {
   width: 50%;
   height: 650px;
