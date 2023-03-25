@@ -168,18 +168,18 @@ input:checked + label + .slide {
   opacity: 1;
 }
 
-.slide1 {
+.slide5 {
   background-image: url(../assets/images/img_1538.jpg);
 }
-.slide2 {
+.slide4 {
   background-image: url(../assets/images/img_1661.jpg);
 }
 .slide3 {
   background-image: url(../assets/images/img_3549.jpg);
 }
-.slide4 {
+.slide2 {
   background-image: url(../assets/images/img_4306.jpg);
 }
-.slide5 {
+.slide1 {
   background-image: url(../assets/images/img_5090.jpg);
 }
