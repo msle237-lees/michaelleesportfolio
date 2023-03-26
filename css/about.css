@@ -280,7 +280,7 @@ input:checked + label + .slide-2 {
   background-image: url(../assets/images/DJI_0066.JPG);
 }
 .slide7 {
-  background-image: url(https://github.com/msle237-lees/michaelleesportfolio/blob/main/assets/images/DJI_0065.JPG);
+  background-image: url('https://github.com/msle237-lees/michaelleesportfolio/blob/main/assets/images/DJI_0065.JPG');
 }
 .slide6 {
   background-image: url(../assets/images/DJI_0064.JPG);
