@@ -203,3 +203,85 @@ input:checked + label + .slide {
 .slide1 {
   background-image: url(../assets/images/img_5090.jpg);
 }
+
+.flex-box-carousel-2 {
+  width: 50%;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+input {
+  visibility: hidden;
+  opacity: 0;
+}
+label {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(187, 187, 187, 0.4);
+  transition: 0.4;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+label[for="slider6"] {
+  margin-top: 20px;
+}
+label[for="slider7"] {
+  margin-top: 40px;
+}
+label[for="slider8"] {
+  margin-top: 60px;
+}
+label[for="slider9"] {
+  margin-top: 80px;
+}
+
+input:checked + label,
+label:hover {
+  background: #fff;
+}
+
+.slide-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateY(-100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.4s;
+  opacity: 1;
+  transform-origin: 50% 50%;
+}
+
+input:checked + .slide-2 {
+  transform: translateY(100%);
+}
+input:checked + label + .slide-2 {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide9 {
+  background-image: url(../assets/images/DJI_0067.JPG);
+}
+.slide8 {
+  background-image: url(../assets/images/DJI_0066.JPG);
+}
+.slide7 {
+  background-image: url(../assets/images/DJI_0065.JPG);
+}
+.slide6 {
+  background-image: url(../assets/images/DJI_0064.jpg);
+}
